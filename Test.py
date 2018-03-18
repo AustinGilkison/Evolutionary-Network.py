@@ -14,6 +14,7 @@ def createInstances(TotalinstanceNumber):
     except Exception as ext:
         print("Build failed: " +  str(ext) )
         exit()
+
 def testAttributes():
     if(
         instances[0].target == test_phrase and 

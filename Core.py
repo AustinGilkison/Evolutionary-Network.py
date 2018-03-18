@@ -41,11 +41,3 @@ class engine:
             #print("Evaluation "+ str(highest)) 
             #print(" ")
             index = index + 1
-
-    
-def time_it(func):
-        def wrapper(*args, **kwargs):
-            start = time.time()
-            result = func(*args, **kwargs)
-            end = time.time()
-            print(func.__name__ + "took" + (start - end))
