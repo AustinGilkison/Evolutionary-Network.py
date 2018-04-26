@@ -8,7 +8,7 @@ class engine:
         self.target = target
         self.mutationRate = mutationRate
         self.popmax = popmax
-        self.accepted = string.ascii_letters + " "
+        self.accepted = string.ascii_letters + " " + string.digits
 
     def runSimulation(self):
     
