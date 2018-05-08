@@ -1,29 +1,28 @@
 
 import DNA
-import Lib
 import random
 
 
 class Population:
-    def __init__(self, target, mutationrate, popmax, accepted):
+    def __init__(self, target, mutation_rate, pop_max, accepted):
         self.Accepted = accepted
         self.target = target
-        self.mutationRate = mutationrate
-        self.popmax = popmax
+        self.mutationRate = mutation_rate
+        self.pop_max = pop_max
         self.population = []
         self.targetLength = len(self.target)
         index = 0
-        while index < popmax:
+        while index < pop_max:
             # print("DNA Unit " + str(index+1))
-            self.population.append(DNA.dna(self.targetLength, accepted, target))
+            self.population.append(DNA.DNA(self.targetLength, accepted, target))
             index = index + 1
         # self.matingPool = []
         self.MostFit = []
         self.fitness = 0
         self.maxFitness = 0
 
-    def naturalselection(self):
-        # maxfitness = 0
+    def natural_selection(self):
+        # max_fitness = 0
         index = 0 
         while index < len(self.population):
             if self.population[index].fitness > self.maxFitness:
@@ -34,7 +33,7 @@ class Population:
         index = 0
         while index < len(self.population):
             # Old Mating pool method of selection
-            # fitness =  Lib.map(self.population[index].fitness, 0, maxfitness, 0, 100)
+            # fitness =  Lib.map(self.population[index].fitness, 0, max_fitness, 0, 100)
             # n = (math.floor(fitness*100)**2)
             # i = 0
             # while i < n:
@@ -46,11 +45,11 @@ class Population:
 
     def generate(self):
         index = 0
-        newpopulation = []
+        new_population = []
         while index < len(self.population):
             # print("Generating unit " + str(index))
-            partner1 = self.acceptreject()
-            partner2 = self.acceptreject()
+            partner1 = self.accept_reject()
+            partner2 = self.accept_reject()
 
             # a = int(math.floor(random.randrange(len(self.matingPool))))
             # b = int(math.floor(random.randrange(len(self.matingPool))))
@@ -59,32 +58,32 @@ class Population:
 
             child = partner1.crossover(partner2)
             child.mutate(self.mutationRate)
-            newpopulation.append(child)
+            new_population.append(child)
             index = index + 1
-        self.population = newpopulation
+        self.population = new_population
         # self.matingPool = []
     
-    def acceptreject(self, ):
-        besafe = 0
+    def accept_reject(self, ):
+        be_safe = 0
         while True:
             index = random.randint(0, len(self.population)-1)
             r = random.randint(0, int(self.maxFitness*100))
             partner = self.population[index]
             if r < partner.fitness*100:
                 return partner
-            besafe = besafe + 1
-            if besafe > 10000:
+            be_safe = be_safe + 1
+            if be_safe > 10000:
                 return None
 
-    def calcfitness(self):
-        # print("population mass fitnesscal started")
+    def calc_fitness(self):
+        # print("population mass fitness_cal started")
         index = 0
         while index < len(self.population):
-            # print("Population fitnesscal stated " + str(index))
-            self.population[index].calcFitness()
+            # print("Population fitness_cal stated " + str(index))
+            self.population[index].calc_fitness()
             index = index + 1
-            # print("Population fitnesscal fished")
-        # print("Population mass fitnesscal finished")
+            # print("Population fitness_cal fished")
+        # print("Population mass fitness_cal finished")
 
     def evaluate(self):
         index = 0
@@ -94,14 +93,14 @@ class Population:
             index = index + 1
         return self.maxFitness
         
-    def makenew(self):
+    def make_new(self):
         index = 0
         self.population = []
         while index < self.popmax:
             self.population.append(DNA.dna(self.targetLength, self.Accepted, self.target))
             index = index + 1
 
-    def fitestelement(self):
+    def fittest_element(self):
         index = 0
         result = ""
         while index < len(self.MostFit):

@@ -5,27 +5,27 @@ import string
 
 class Engine:
 
-    def __init__(self, target, mutationRate, popmax):
+    def __init__(self, target, mutation_rate, pop_max):
         self.target = target
-        self.mutationRate = mutationRate
-        self.popmax = popmax
+        self.mutationRate = mutation_rate
+        self.pop_max = pop_max
         self.accepted = string.ascii_letters + " " + string.digits
-        self.gentillcomplete = None
+        self.gen_till_complete = None
 
-    def runsimulation(self):
+    def run_simulation(self):
     
-        population = Population.Population(self.target, self.mutationRate, self.popmax, self.accepted)
+        population = Population.Population(self.target, self.mutationRate, self.pop_max, self.accepted)
 
         index = 1
         highest = 0
         while highest < 100:
             # print(index)
-            # print("Starting main fitnesscal")
-            population.calcfitness()
-            # print("Finished main fitnesscal")
+            # print("Starting main fitness_cal")
+            population.calc_fitness()
+            # print("Finished main fitness_cal")
 
             # print("Starting natural section")
-            population.naturalselection()
+            population.natural_selection()
             # print("Finishing natural section")
 
             # print("Generating next Population")
@@ -35,10 +35,10 @@ class Engine:
             # print("Evaluating population")
             loop = int(population.evaluate()*100)
 
-            mostfit = population.fitestelement()
+            most_fit = population.fittest_element()
 
-            print("Fitest from population " +
-                  str(index) + ' is "' + str(mostfit) +
+            print("Fittest from population " +
+                  str(index) + ' is "' + str(most_fit) +
                   '" with a fitness of ' + str(loop) + "%")
 
             if loop > highest:
@@ -47,4 +47,4 @@ class Engine:
             # print(" ")
             index = index + 1
 
-            self.gentillcomplete = index
+            self.gen_till_complete = index

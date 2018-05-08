@@ -1,8 +1,9 @@
-import time, random, string
+import time
+import random
+import string
 
-def map(value, start1, stop1, start2, stop2):
-    numberRange = stop1-start1
-    finalRange = stop2-stop1
+
+def map_v2(value, stop2):
     n = value*stop2
     x = n/stop2
     return x
@@ -17,7 +18,8 @@ def time_it(func):
         return result
     return wrapper
 
-def Accepted(length):
+
+def accept(length):
     accepted = string.ascii_letters + " "
     index = 0
     result = ""

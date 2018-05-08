@@ -6,13 +6,13 @@ mutation_rate = 1
 population_number = 500
 
 
-def createinstances(total_number):
+def create_instances(total_number):
     try:
         for i in range(0, total_number):
             instances.append(Core.engine(test_phrase, mutation_rate, population_number))
         print("Build finished")
     except Exception as ext:
-        print("Build failed: " +  str(ext) )
+        print("Build failed: " + str(ext))
         exit()
 
 
@@ -28,5 +28,5 @@ def testattributes():
         exit()
 
 
-createinstances(10)
+create_instances(10)
 testattributes()

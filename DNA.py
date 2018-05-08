@@ -1,35 +1,36 @@
+import random
+import math
 
-import random, math
 
-class dna:
+class DNA:
 
-    def __init__(self, targetLength, Accepted, target):
-        self.Accepted = Accepted
-        self.targetLength = targetLength
+    def __init__(self, target_length, accepted, target):
+        self.Accepted = accepted
+        self.targetLength = target_length
         self.genes = []
         self.fitness = 0.00
         self.target = target
         index = 0
-        while index < targetLength:
-            self.genes.append(random.choice(Accepted))
+        while index < target_length:
+            self.genes.append(random.choice(accepted))
             index = index + 1
 
-    def calcFitness(self):
+    def calc_fitness(self):
         score = 0
         index = 0
         while index < len(self.genes):
-            #print("DNA fitnesscal stated " + str(index))
+            # print("DNA fitness_cal stated " + str(index))
             if self.genes[index] == self.target[index]:
                 score = score + 1
-            #print(score)
+            # print(score)
             index = index + 1
-            #print("DNA fitnesscal finished")
+            # print("DNA fitness_cal finished")
         self.fitness = float(score)/float(self.targetLength)
-        #print(self.fitness)
+        # print(self.fitness)
         return self.fitness
 
     def crossover(self, partner):
-        child = dna(self.targetLength, self.Accepted, self.target)
+        child = DNA(self.targetLength, self.Accepted, self.target)
         midpoint = math.floor(random.randrange(len(self.genes)))
         index = 0
 
@@ -39,14 +40,14 @@ class dna:
             else:
                 child.genes[index] = partner.genes[index]
             index = index + 1
-        #print(child.genes)
+        # print(child.genes)
         return child
 
-    def mutate(self, mutationRate):
+    def mutate(self, mutation_rate):
         index = 0
-        #print("Mutating")
+        # print("Mutating")
         while index < len(self.genes):
-            if random.randint(0,100) < mutationRate:
+            if random.randint(0,100) < mutation_rate:
                 self.genes[index] = random.choice(self.Accepted)
             index = index + 1
-        #print(self.genes)
+        # print(self.genes)
