@@ -1,5 +1,7 @@
 import Core
 
+# TODO Create Documentation
+
 instances = []
 test_phrase = "This is a test"
 mutation_rate = 1

@@ -1,6 +1,7 @@
 import random
 import math
 
+# TODO Create Documentation
 
 class DNA:
 

@@ -2,6 +2,7 @@
 import DNA
 import random
 
+# TODO Create Documentation and clean up
 
 class Population:
     def __init__(self, target, mutation_rate, pop_max, accepted):

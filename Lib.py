@@ -2,6 +2,7 @@ import time
 import random
 import string
 
+# TODO Determine if this is really needed :(
 
 def map_v2(value, stop2):
     n = value*stop2
