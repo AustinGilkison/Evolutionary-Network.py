@@ -1,11 +1,12 @@
-# TODO import logger and implement
+# TODO Implement logger more!
 
 from tkinter import *
 import Core
 import logging
+
 # TODO Create Documentation
 
-LOG_FORMAT = "%(levelname)s %(asctime)s - %(message)s"
+LOG_FORMAT = "%(filename)s %(levelname)s %(asctime)s - %(message)s"
 logging.basicConfig(filename="./DebugLog.Log",
                     level=logging.DEBUG,
                     format=LOG_FORMAT,
@@ -49,6 +50,7 @@ class Simulation:
                         ))
         self.simulation = Core.Engine(self.target, self.mutation, self.pop)
         self.simulation.gen_population()
+        generationsRs.config(text="0")
         self.update_status("Population created")
 
     def update_gen(self):

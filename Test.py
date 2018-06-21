@@ -18,7 +18,7 @@ def create_instances(total_number):
         exit()
 
 
-def testattributes():
+def test_attributes():
     if(
         instances[0].target == test_phrase and 
         instances[0].mutationRate == mutation_rate and
@@ -31,4 +31,4 @@ def testattributes():
 
 
 create_instances(10)
-testattributes()
+test_attributes()

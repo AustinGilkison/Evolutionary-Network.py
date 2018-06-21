@@ -3,6 +3,7 @@ import math
 
 # TODO Create Documentation
 
+
 class DNA:
 
     def __init__(self, target_length, accepted, target):
