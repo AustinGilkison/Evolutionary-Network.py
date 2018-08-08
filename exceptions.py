@@ -5,3 +5,8 @@ class Error(Exception):
 
 class PopToSmall(Error):
     pass
+
+
+class PropertiesOutOfSync(Error):
+    pass
+
