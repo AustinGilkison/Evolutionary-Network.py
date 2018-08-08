@@ -59,6 +59,7 @@ class Engine:
 
         fittest_level_one_time = int(self.population.evaluate() * 100)
 
+
         self.most_fit_dna = self.population.fittest_element()
 
         logger.debug("Fittest from population {currentGen} is {mostFit} with a fitness of {fittest}%".format(
