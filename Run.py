@@ -1,5 +1,9 @@
 import Core
 
-test = Core.engine("Hello", 1,100)
 
-test.runSimulation()
+# TODO Create Documentation
+
+test = Core.Engine("Hello", 1, 100)
+
+test.run_simulation()
+
