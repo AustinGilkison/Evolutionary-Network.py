@@ -1,0 +1,85 @@
+GUI.py INFO 2018-08-20 15:23:35,408 - GUI instance started
+GUI.py DEBUG 2018-08-20 15:23:35,439 - Init Simulation class
+GUI.py DEBUG 2018-08-20 15:23:44,502 - set_properties for Simulation with values target: asd, mutation: 1, and pop: 100
+GUI.py DEBUG 2018-08-20 15:23:44,502 - Updating GUI status, Current status: Awaiting Test, New status: Properties set, population creation ready
+GUI.py DEBUG 2018-08-20 15:23:44,940 - Creating instance of Core.Engine with Simulation values values target: asd, mutation: 1, and pop: 100
+GUI.py DEBUG 2018-08-20 15:23:44,940 - Updating GUI status, Current status: Properties set, population creation ready, New status: Population created
+GUI.py DEBUG 2018-08-20 15:23:50,326 - Starting run_sim_x_times function with values times: 1, and infinity: False
+GUI.py DEBUG 2018-08-20 15:23:50,326 - run_sim_x_times round 1/1 INFINITY: False
+GUI.py DEBUG 2018-08-20 15:23:50,326 - Updating GUI status, Current status: Population created, New status: Running Evolution!
+Population.py DEBUG 2018-08-20 15:23:50,327 - Size of MatingPool 100
+Core.py DEBUG 2018-08-20 15:23:50,342 - Fittest from population 0 is pwd with a fitness of 33%
+GUI.py DEBUG 2018-08-20 15:23:50,342 - Updating the Simulation instance generation number to the generation number of Core.Engine instance, Current value: Please run a Test, New value: 1
+GUI.py DEBUG 2018-08-20 15:23:50,342 - Updating fitness, Current fitness: 0, New fitness: 33
+GUI.py DEBUG 2018-08-20 15:23:50,342 - Updating GUI status, Current status: Running Evolution!, New status: Evolution finished
+GUI.py DEBUG 2018-08-20 15:23:52,572 - Starting run_sim_x_times function with values times: 10, and infinity: False
+GUI.py DEBUG 2018-08-20 15:23:52,572 - run_sim_x_times round 1/10 INFINITY: False
+GUI.py DEBUG 2018-08-20 15:23:52,572 - Updating GUI status, Current status: Evolution finished, New status: Running Evolution!
+Population.py DEBUG 2018-08-20 15:23:52,573 - Size of MatingPool 100
+Core.py DEBUG 2018-08-20 15:23:52,575 - Fittest from population 1 is ssd with a fitness of 66%
+GUI.py DEBUG 2018-08-20 15:23:52,575 - Updating the Simulation instance generation number to the generation number of Core.Engine instance, Current value: 1, New value: 2
+GUI.py DEBUG 2018-08-20 15:23:52,575 - Updating fitness, Current fitness: 33, New fitness: 66
+GUI.py DEBUG 2018-08-20 15:23:52,575 - Updating GUI status, Current status: Running Evolution!, New status: Evolution finished
+GUI.py DEBUG 2018-08-20 15:23:52,575 - run_sim_x_times round 2/10 INFINITY: False
+GUI.py DEBUG 2018-08-20 15:23:52,575 - Updating GUI status, Current status: Evolution finished, New status: Running Evolution!
+Population.py DEBUG 2018-08-20 15:23:52,575 - Size of MatingPool 100
+Core.py DEBUG 2018-08-20 15:23:52,577 - Fittest from population 2 is ssd with a fitness of 66%
+GUI.py DEBUG 2018-08-20 15:23:52,578 - Updating the Simulation instance generation number to the generation number of Core.Engine instance, Current value: 2, New value: 3
+GUI.py DEBUG 2018-08-20 15:23:52,578 - Updating fitness, Current fitness: 66, New fitness: 66
+GUI.py DEBUG 2018-08-20 15:23:52,578 - Updating GUI status, Current status: Running Evolution!, New status: Evolution finished
+GUI.py DEBUG 2018-08-20 15:23:52,578 - run_sim_x_times round 3/10 INFINITY: False
+GUI.py DEBUG 2018-08-20 15:23:52,578 - Updating GUI status, Current status: Evolution finished, New status: Running Evolution!
+Population.py DEBUG 2018-08-20 15:23:52,578 - Size of MatingPool 100
+Core.py DEBUG 2018-08-20 15:23:52,580 - Fittest from population 3 is ssd with a fitness of 66%
+GUI.py DEBUG 2018-08-20 15:23:52,580 - Updating the Simulation instance generation number to the generation number of Core.Engine instance, Current value: 3, New value: 4
+GUI.py DEBUG 2018-08-20 15:23:52,580 - Updating fitness, Current fitness: 66, New fitness: 66
+GUI.py DEBUG 2018-08-20 15:23:52,580 - Updating GUI status, Current status: Running Evolution!, New status: Evolution finished
+GUI.py DEBUG 2018-08-20 15:23:52,581 - run_sim_x_times round 4/10 INFINITY: False
+GUI.py DEBUG 2018-08-20 15:23:52,581 - Updating GUI status, Current status: Evolution finished, New status: Running Evolution!
+Population.py DEBUG 2018-08-20 15:23:52,581 - Size of MatingPool 100
+Core.py DEBUG 2018-08-20 15:23:52,583 - Fittest from population 4 is ssd with a fitness of 66%
+GUI.py DEBUG 2018-08-20 15:23:52,583 - Updating the Simulation instance generation number to the generation number of Core.Engine instance, Current value: 4, New value: 5
+GUI.py DEBUG 2018-08-20 15:23:52,583 - Updating fitness, Current fitness: 66, New fitness: 66
+GUI.py DEBUG 2018-08-20 15:23:52,583 - Updating GUI status, Current status: Running Evolution!, New status: Evolution finished
+GUI.py DEBUG 2018-08-20 15:23:52,585 - run_sim_x_times round 5/10 INFINITY: False
+GUI.py DEBUG 2018-08-20 15:23:52,585 - Updating GUI status, Current status: Evolution finished, New status: Running Evolution!
+Population.py DEBUG 2018-08-20 15:23:52,585 - Size of MatingPool 100
+Core.py DEBUG 2018-08-20 15:23:52,587 - Fittest from population 5 is ssd with a fitness of 66%
+GUI.py DEBUG 2018-08-20 15:23:52,587 - Updating the Simulation instance generation number to the generation number of Core.Engine instance, Current value: 5, New value: 6
+GUI.py DEBUG 2018-08-20 15:23:52,587 - Updating fitness, Current fitness: 66, New fitness: 66
+GUI.py DEBUG 2018-08-20 15:23:52,587 - Updating GUI status, Current status: Running Evolution!, New status: Evolution finished
+GUI.py DEBUG 2018-08-20 15:23:52,587 - run_sim_x_times round 6/10 INFINITY: False
+GUI.py DEBUG 2018-08-20 15:23:52,587 - Updating GUI status, Current status: Evolution finished, New status: Running Evolution!
+Population.py DEBUG 2018-08-20 15:23:52,588 - Size of MatingPool 100
+Core.py DEBUG 2018-08-20 15:23:52,589 - Fittest from population 6 is ssd with a fitness of 66%
+GUI.py DEBUG 2018-08-20 15:23:52,589 - Updating the Simulation instance generation number to the generation number of Core.Engine instance, Current value: 6, New value: 7
+GUI.py DEBUG 2018-08-20 15:23:52,590 - Updating fitness, Current fitness: 66, New fitness: 66
+GUI.py DEBUG 2018-08-20 15:23:52,590 - Updating GUI status, Current status: Running Evolution!, New status: Evolution finished
+GUI.py DEBUG 2018-08-20 15:23:52,590 - run_sim_x_times round 7/10 INFINITY: False
+GUI.py DEBUG 2018-08-20 15:23:52,590 - Updating GUI status, Current status: Evolution finished, New status: Running Evolution!
+Population.py DEBUG 2018-08-20 15:23:52,590 - Size of MatingPool 100
+Core.py DEBUG 2018-08-20 15:23:52,592 - Fittest from population 7 is ssd with a fitness of 66%
+GUI.py DEBUG 2018-08-20 15:23:52,592 - Updating the Simulation instance generation number to the generation number of Core.Engine instance, Current value: 7, New value: 8
+GUI.py DEBUG 2018-08-20 15:23:52,592 - Updating fitness, Current fitness: 66, New fitness: 66
+GUI.py DEBUG 2018-08-20 15:23:52,592 - Updating GUI status, Current status: Running Evolution!, New status: Evolution finished
+GUI.py DEBUG 2018-08-20 15:23:52,592 - run_sim_x_times round 8/10 INFINITY: False
+GUI.py DEBUG 2018-08-20 15:23:52,592 - Updating GUI status, Current status: Evolution finished, New status: Running Evolution!
+Population.py DEBUG 2018-08-20 15:23:52,592 - Size of MatingPool 100
+Core.py DEBUG 2018-08-20 15:23:52,594 - Fittest from population 8 is ssd with a fitness of 66%
+GUI.py DEBUG 2018-08-20 15:23:52,594 - Updating the Simulation instance generation number to the generation number of Core.Engine instance, Current value: 8, New value: 9
+GUI.py DEBUG 2018-08-20 15:23:52,594 - Updating fitness, Current fitness: 66, New fitness: 66
+GUI.py DEBUG 2018-08-20 15:23:52,594 - Updating GUI status, Current status: Running Evolution!, New status: Evolution finished
+GUI.py DEBUG 2018-08-20 15:23:52,594 - run_sim_x_times round 9/10 INFINITY: False
+GUI.py DEBUG 2018-08-20 15:23:52,594 - Updating GUI status, Current status: Evolution finished, New status: Running Evolution!
+Population.py DEBUG 2018-08-20 15:23:52,595 - Size of MatingPool 100
+Core.py DEBUG 2018-08-20 15:23:52,596 - Fittest from population 9 is ssd with a fitness of 66%
+GUI.py DEBUG 2018-08-20 15:23:52,596 - Updating the Simulation instance generation number to the generation number of Core.Engine instance, Current value: 9, New value: 10
+GUI.py DEBUG 2018-08-20 15:23:52,596 - Updating fitness, Current fitness: 66, New fitness: 66
+GUI.py DEBUG 2018-08-20 15:23:52,596 - Updating GUI status, Current status: Running Evolution!, New status: Evolution finished
+GUI.py DEBUG 2018-08-20 15:23:52,599 - run_sim_x_times round 10/10 INFINITY: False
+GUI.py DEBUG 2018-08-20 15:23:52,599 - Updating GUI status, Current status: Evolution finished, New status: Running Evolution!
+Population.py DEBUG 2018-08-20 15:23:52,599 - Size of MatingPool 100
+Core.py DEBUG 2018-08-20 15:23:52,601 - Fittest from population 10 is ssd with a fitness of 66%
+GUI.py DEBUG 2018-08-20 15:23:52,601 - Updating the Simulation instance generation number to the generation number of Core.Engine instance, Current value: 10, New value: 11
+GUI.py DEBUG 2018-08-20 15:23:52,601 - Updating fitness, Current fitness: 66, New fitness: 66
+GUI.py DEBUG 2018-08-20 15:23:52,601 - Updating GUI status, Current status: Running Evolution!, New status: Evolution finished
